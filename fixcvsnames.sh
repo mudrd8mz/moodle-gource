@@ -62,8 +62,8 @@ sed -i 's/^user:ikawhero$/user:Shane Elliott/' moodle.log
 sed -i 's/^user:Inaki$/user:Iñaki Arenaza/' moodle.log
 sed -i 's/^user:jamiesensei$/user:James Pratt/' moodle.log
 sed -i 's/^user:jbeedell$/user:John Beedell/' moodle.log
-sed -i 's/^user:jerome$/user:Jerome Mouneyrac/' moodle.log
-sed -i 's/^user:jerome mouneyrac$/user:Jerome Mouneyrac/' moodle.log
+sed -i 's/^user:jerome$/user:Jérôme Mouneyrac/' moodle.log
+sed -i 's/^user:jerome mouneyrac$/user:Jérôme Mouneyrac/' moodle.log
 sed -i 's/^user:jgraham909$/user:Jeff Graham/' moodle.log
 sed -i 's/^user:jgutierr25$/user:Jérôme Gutierrez/' moodle.log
 sed -i 's/^user:jmg324$/user:Jenny Gray/' moodle.log
@@ -101,7 +101,7 @@ sed -i 's/^user:moodler$/user:Martin Dougiamas/' moodle.log
 sed -i 's/^user:moodlerobot$/user:Moodle Robot/' moodle.log
 sed -i 's/^user:moquist$/user:Matt Oquist/' moodle.log
 sed -i 's/^user:msketcham$/user:Michael Ketcham/' moodle.log
-sed -i 's/^user:mudrd8mz$/user:David Mudrak/' moodle.log
+sed -i 's/^user:mudrd8mz$/user:David Mudrák/' moodle.log
 sed -i 's/^user:nfreear$/user:Nick Freear/' moodle.log
 sed -i 's/^user:nicolasconnault$/user:Nicolas Connault/' moodle.log
 sed -i 's/^user:paca70$/user:Petri Asikainen/' moodle.log
@@ -133,7 +133,7 @@ sed -i 's/^user:scyrma$/user:Mathieu Petit-Clair/' moodle.log
 sed -i 's/^user:selliott$/user:Scott Elliott/' moodle.log
 sed -i 's/^user:set_lo$/user:Set Lo/' moodle.log
 sed -i 's/^user:skaldrom$/user:Michael Schneider/' moodle.log
-sed -i 's/^user:skodak$/user:Petr Skoda/' moodle.log
+sed -i 's/^user:skodak$/user:Petr Škoda/' moodle.log
 sed -i 's/^user:stigbjarne$/user:Stig Bjarne Haugen/' moodle.log
 sed -i 's/^user:stronk7$/user:Eloy Lafuente/' moodle.log
 sed -i 's/^user:thepurpleblob$/user:Howard Miller/' moodle.log

@@ -29,5 +29,5 @@ To render MPEG video with the visualisation:
              --highlight-users --hide bloom,filenames,mouse,progress \
              --user-image-dir usr/ moodle.log --output-framerate 25 \
              --output-ppm-stream - | \
-      ffmpeg -vpre libx264-default -y -b 3000K -r 25 -f image2pipe \
-             -vcodec ppm -i - -vcodec libx264 moodle.mp4
+      ffmpeg -y -b 3000K -r 25 -f image2pipe -vcodec ppm -i -
+             -vcodec libx264 -vpre libx264-ultrafast -s hd720 moodle.mp4

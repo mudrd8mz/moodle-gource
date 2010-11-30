@@ -18,17 +18,16 @@ To display Moodle logo and user avatars from moodle.org pages:
 
 I have found the following parameters suitable for an interactive animation:
 
-    # gource --viewport 1024x768 --time-scale 2 --auto-skip-seconds 1 \
-             --seconds-per-day 1 --logo logo.png --title 'http://moodle.org' \
+    # gource --fullscreen --seconds-per-day 0.5 --auto-skip-seconds 1 \
+             --multi-sampling --logo logo.png --title 'http://moodle.org' \
              --highlight-users --hide filenames --user-image-dir usr/ moodle.log
 
-To render MPEG video with that visualisation:
+To render MPEG video with the visualisation:
 
-    # gource --viewport 1024x768 --time-scale 2 --auto-skip-seconds 1 \
-             --seconds-per-day 1 --logo logo.png --title 'http://moodle.org' \
-             --highlight-users --hide filenames,mouse,progress \
-             --user-image-dir usr/ moodle.log \
-             --output-framerate 25 --output-ppm-stream - |
-             ffmpeg -vpre libx264-default -y -b 3000K -r 25 \
-                    -f image2pipe -vcodec ppm -i - \
-                    -vcodec libx264 moodle.mp4
+    # gource --viewport 1280x720 --seconds-per-day 0.5 --auto-skip-seconds 1 \
+             --multi-sampling --logo logo.png --title 'http://moodle.org' \
+             --highlight-users --hide bloom,filenames,mouse,progress \
+             --user-image-dir usr/ moodle.log --output-framerate 25 \
+             --output-ppm-stream - | \
+      ffmpeg -vpre libx264-default -y -b 3000K -r 25 -f image2pipe \
+             -vcodec ppm -i - -vcodec libx264 moodle.mp4

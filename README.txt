@@ -5,7 +5,7 @@ This repository contains useful resources to render Moodle (http://moodle.org)
 development visualisation using Gource (http://code.google.com/p/gource/)
 
 Once you have Gource installed on your computer, use the moodle.log from this
-file to visualise the Moodle development history
+repository to visualise the Moodle development history.
 
     $ gource moodle.log
 

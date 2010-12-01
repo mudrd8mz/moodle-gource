@@ -25,9 +25,8 @@ I have found the following parameters suitable for an interactive animation:
 To render MPEG video with the visualisation:
 
     # gource --viewport 1280x720 --seconds-per-day 0.5 --auto-skip-seconds 1 \
-             --multi-sampling --logo logo.png --title 'http://moodle.org' \
-             --highlight-users --hide bloom,filenames,mouse,progress \
-             --user-image-dir usr/ moodle.log --output-framerate 25 \
-             --output-ppm-stream - | \
-      ffmpeg -y -b 3000K -r 25 -f image2pipe -vcodec ppm -i -
-             -vcodec libx264 -vpre libx264-ultrafast -s hd720 moodle.mp4
+             --logo logo.png --title 'http://moodle.org' --highlight-users \
+             --hide bloom,filenames,mouse,progress --user-image-dir usr/ \
+             moodle.log --output-framerate 25 --output-ppm-stream - | \
+      ffmpeg -y -b 3000K -r 25 -f image2pipe -vcodec ppm -i - \
+             -vcodec libx264 -vpre libx264-default moodle.mp4
